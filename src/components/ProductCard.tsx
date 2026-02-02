@@ -84,13 +84,13 @@ const ProductCard = ({ product }: ProductCardProps) => {
         {/* Price */}
         <div className="flex items-center justify-between border-t border-primary/10 pt-4">
           <span className="text-foreground font-display text-xl">
-            ${product.price.toFixed(2)}
+            {product.priceDA.toLocaleString()} DA
           </span>
           <Link 
             to={`/product/${product.id}`}
             className="text-primary hover:text-gold-light transition-colors text-sm uppercase tracking-[0.1em] hover-underline-gold"
           >
-            View Details
+            Voir Détails
           </Link>
         </div>
       </div>
